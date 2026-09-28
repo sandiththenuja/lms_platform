@@ -24,7 +24,7 @@ const CompanionCard = ({id, name, topic, subject, duration, color}: CompanionCar
         <div className="flex items-center gap-2">
             <Image src='/icons/clock.svg' alt="duration" width={13.5} height={13.5} />
         </div>
-    </article>a
+    </article>
   )
 }
 
