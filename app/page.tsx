@@ -1,12 +1,42 @@
+import CompanionCard from '@/components/CompanionCard'
+import CompanionsList from '@/components/CompanionsList'
+import CTA from '@/components/CTA'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 
 const Page = () => {
   return (
-    <div>
-      <h1 className='text-2xl'>Hello</h1>
-      <Button>Click</Button>
-    </div>
+    <main>
+      <h1 className='text-2xl'>Popular Companions</h1>
+      <section className='home-section'>
+        <CompanionCard
+          id='123'
+          name='Neura the Brainy Explorer'
+          topic='Neural Network of Brain'
+          subject='science'
+          duration={45}
+          color='#ffda6e' />
+        <CompanionCard 
+          id='456'
+          name='Neura the Brainy Explorer'
+          topic='Neural Network of Brain'
+          subject='science'
+          duration={45}
+          color='#ffda6e' />
+        <CompanionCard
+          id='789'
+          name='Neura the Brainy Explorer'
+          topic='Neural Network of Brain'
+          subject='science'
+          duration={45}
+          color='#ffda6e' />
+      </section>
+
+      <section className="home-section">
+        <CompanionsList />
+        <CTA />
+      </section>
+    </main>
   )
 }
 
