@@ -19,7 +19,7 @@ const CompanionComponent = ({companionId, subject, topic, name, userName, userIm
     const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE)
     const [isSpeaking, setIsSpeaking] = useState(false)
     const [isMuted, setIsMuted] = useState(false)
-    const [messages, setMessages] = useState<SavedMessages[]>([])
+    const [messages, setMessages] = useState<SavedMessage[]>([])
 
     useEffect(() => {
         const onCallStart = () => setCallStatus(CallStatus.ACTIVE)
